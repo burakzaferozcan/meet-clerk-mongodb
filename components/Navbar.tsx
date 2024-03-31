@@ -23,7 +23,7 @@ const Navbar = () => {
         </SignedIn>
         <SignedOut>
           <Link href="/sign-in" className="flex items-center gap-1">
-            <Button className="bg-white text-slate-800">
+            <Button className="bg-white text-slate-800 hover:bg-slate-400">
               <strong>Login</strong>
             </Button>
           </Link>
