@@ -77,7 +77,10 @@
 .cl-userButtonPopoverActionButton {
   color: white;
 }
-
+.cl-providerIcon__github {
+  background-color: white;
+  border-radius: 100%;
+}
 /* =============================== */
 
 @layer utilities {
