@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SignedIn, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 import MobileNav from "./MobileNav";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
@@ -18,9 +19,15 @@ const Navbar = () => {
       </Link>
       <div className="flex-between gap-5">
         <SignedIn>
-          <UserButton afterSignOutUrl="/sign-in" />
+          <UserButton afterSignOutUrl="/" />
         </SignedIn>
-
+        <SignedOut>
+          <Link href="/sign-in" className="flex items-center gap-1">
+            <Button className="bg-white text-slate-800">
+              <strong>Login</strong>
+            </Button>
+          </Link>
+        </SignedOut>
         <MobileNav />
       </div>
     </nav>

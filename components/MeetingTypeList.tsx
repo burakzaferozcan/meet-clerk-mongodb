@@ -126,7 +126,7 @@ const MeetingTypeList = () => {
               timeFormat="HH:mm"
               timeIntervals={15}
               timeCaption="time"
-              dateFormat="MMMM d, yyyy h:mm aa"
+              dateFormat="MMMM d, yyyy HH:mm aa"
               className="w-full rounded bg-dark-3 p-2 focus:outline-none"
             />
           </div>
